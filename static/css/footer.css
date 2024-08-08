@@ -52,7 +52,7 @@
 .footer__social-list {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espaço entre os ícones */
+    gap: 15px;
 }
 
 .footer__social-item {
@@ -61,32 +61,32 @@
 
 .footer__social-link {
     display: inline-block;
-    color: #333; /* Cor padrão dos ícones */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 34px; /* Tamanho dos ícones */
-    transition: color 0.3s; /* Transição suave para a cor dos ícones */
+    color: #333;
+    text-decoration: none;
+    font-size: 34px;
+    transition: color 0.3s;
 }
 
 .footer__social-link i:hover,
 .footer__social-link i:focus {
-    color: var(--red-dark); /* Cor dos ícones ao passar o mouse ou focar */
+    color: var(--red-dark);
 }
 
 /* Adicionar fontes para os ícones */
 .icon-instagram::before {
-    content: '\f16d'; /* Código unicode do ícone do Instagram */
+    content: '\f16d';
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
 }
 
 .icon-facebook::before {
-    content: '\f09a'; /* Código unicode do ícone do Facebook */
+    content: '\f09a';
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
 }
 
 .icon-linkedin::before {
-    content: '\f08c'; /* Código unicode do ícone do LinkedIn */
+    content: '\f08c';
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
 }

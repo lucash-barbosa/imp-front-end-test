@@ -4,21 +4,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    transition: transform 0.3s; /* Transição suave para o cabeçalho */
-    transform: translateY(0); /* Posição padrão do cabeçalho */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    transition: transform 0.3s;
+    transform: translateY(0);
+    z-index: 1000;
     background-color: var(--white);
     border-bottom: 1px solid var(--gray-light);
 }
 
 /* Espaço reservado para o cabeçalho quando estiver oculto */
 .header-placeholder {
-    height: 80px; /* Ajuste a altura para corresponder à altura do cabeçalho */
+    height: 80px;
 }
 
 /* Cabeçalho oculto */
 .header.hidden {
-    transform: translateY(-100%); /* Move o cabeçalho para fora da tela */
+    transform: translateY(-100%);
 }
 
 .header__container {
@@ -103,16 +103,15 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        margin-right: 1em; /* Espaçamento entre o ícone e o texto */
-        /* Adicione outras estilizações se necessário */
+        margin-right: 1em;
     }
     
     .header__menu-label::before {
-        content: '\f0c9'; /* Código Unicode do ícone Font Awesome (fa-bars) */
+        content: '\f0c9';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 900; /* Peso para ícones sólidos */
-        font-size: 28px; /* Ajuste o tamanho do ícone */
-        color:var(--black-light); /* Ajuste a cor do ícone */
+        font-weight: 900;
+        font-size: 28px;
+        color:var(--black-light);
     }
 
     .header__menu-icon {

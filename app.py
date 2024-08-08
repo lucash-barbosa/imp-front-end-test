@@ -14,10 +14,10 @@ def index():
 def employees():
     # Obtendo o número da página a partir dos parâmetros da URL
     page = int(request.args.get('page', 1))
-    results_per_page = 20  # Número de usuários por página
+    results_per_page = 20
 
     # Fazendo a requisição GET à API
-    response = requests.get(API_URL, params={'results': 100})  # Obtém 100 usuários
+    response = requests.get(API_URL, params={'results': 100})
     data = response.json()
 
     # Extraindo a lista de usuários
@@ -28,7 +28,7 @@ def employees():
     end = start + results_per_page
     paginated_users = users[start:end]
 
-    total_pages = (len(users) + results_per_page - 1) // results_per_page  # Calcula o número total de páginas
+    total_pages = (len(users) + results_per_page - 1) // results_per_page 
 
     # Passando os dados para o template
     return render_template(

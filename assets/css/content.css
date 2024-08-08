@@ -1,0 +1,278 @@
+/* Estilos gerais */
+.text-center {
+    text-align: center;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-size-large {
+    font-size: 48px;
+}
+
+.font-size-medium {
+    font-size: 20px;
+}
+
+.font-size-small {
+    font-size: 14px;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.border-radius-12 {
+    border-radius: 12px;
+}
+
+/* Seção Sobre Nós */
+.about-us {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about-us__subtitle {
+    font-weight: 600;
+    color: var(--red-dark);
+}
+
+.about-us__highlighted-title {
+    font-weight: 600;
+    font-size: var(--font-size-large);
+    color: var(--black-light);
+    margin: 2rem 0;
+}
+
+.about-us__paragraph {
+    color: var(--gray-light);
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+    width: var(--width-80);
+    margin: 0 auto;
+}
+
+/* Dados */
+.about-us__data {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-us__data-item {
+    margin: 2rem;
+    text-align: center;
+    width: 22%;
+}
+
+.about-us__data-quantity {
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--red-dark);
+}
+
+.about-us__data-title {
+    font-size: 18px;
+    color: var(--black-light);
+}
+
+.about-us__data-paragraph {
+    font-weight: 400;
+    color: var(--gray-light);
+}
+
+/* Vagas */
+.job-openings {
+    text-align: center;
+}
+
+.job-openings__subtitle {
+    background-color: var(--red-light);
+    padding: 0.5em;
+    border-radius: var(--border-radius-10);
+    font-weight: 500;
+    font-size: var(--font-size-small);
+}
+
+.job-openings__container {
+    width: var(--width-90);
+    margin: auto;
+}
+
+.job-openings__image {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.job-openings__positions {
+    width: var(--width-80);
+    margin: auto;
+}
+
+.job-openings__position {
+    margin: auto;
+    border-radius: var(--border-radius-12);
+    border: solid 1px rgba(234, 236, 240, 1);
+    text-align: left;
+    padding: 1.5em;
+    margin: 1rem 0;
+}
+
+.job-openings__position-title {
+    color: var(--black-light);
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.job-openings__role-info {
+    display: inline-block;
+    color: var(--gray-light);
+    margin: 0 0.5em;
+}
+
+/* Estilos gerais para a seção do formulário */
+.contact-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form__subtitle {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form__highlighted-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form__form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilos para os campos do formulário */
+.contact-form__field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilos para os rótulos dos campos */
+.contact-form__label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Estilos para campos de entrada e áreas de texto */
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%; /* Garante que o input e a área de texto usem a largura total do contêiner pai */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos para o foco dos campos de entrada e áreas de texto */
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    border-color: var(--red-dark); /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+/* Estilos para o botão do formulário */
+.contact-form__button {
+    background-color: var(--red-very-dark); /* Cor do botão */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para cor */
+}
+
+/* Estilos para o botão ao passar o mouse */
+.contact-form__button:hover {
+    background-color: var(--red-dark); /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos específicos para a área de texto */
+.contact-form__textarea {
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .about-us__paragraph {
+        width: 60%;
+    }
+
+    .about-us__data {
+        padding: 0 5rem;
+    }
+
+    .about-us__data-item {
+        width: 22%;
+    }
+
+    .job-openings__image {
+        max-width: 85%;
+        aspect-ratio: 17 / 6;
+    }
+
+    .testimonials {
+        width: 75%;
+        margin: 5rem auto;
+        border-radius: var(--border-radius-10);
+    }
+
+    .testimonials__highlighted-title {
+        font-size: 44px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .job-openings__positions {
+        width: 50%;
+    }
+}

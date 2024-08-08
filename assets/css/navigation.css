@@ -1,0 +1,55 @@
+/* Estilos Gerais do Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.header__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    margin-left: 1rem;
+    font-size: 18px;
+    color: var(--cinza-escuro);
+}
+
+/* Navegação */
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    margin: 0 auto 0 5rem;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    margin-left: 2rem;
+}
+
+/* Botões de Login e Destaque */
+.header__nav-login {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-link-login {
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+
+.header__nav-link-highlight {
+    margin-left: 2rem;
+    padding: 1em;
+    color: #FFF;
+    background-color: var(--vermelho-escuro);
+    border-radius: 10px;
+}

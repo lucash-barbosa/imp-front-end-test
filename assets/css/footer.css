@@ -1,0 +1,89 @@
+/* Estilos do Rodapé */
+.footer {
+    background-color: var(--white-dark);
+    padding: 10%;
+    text-align: center;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--black-light);
+}
+
+.footer__paragraph {
+    color: var(--gray-light);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 1em 0;
+}
+
+.footer__email {
+    padding: 12px 16px;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.footer__rights {
+    color: var(--gray-light);
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+/* Estilos Responsivos */
+@media screen and (min-width: 768px) {
+    .footer__title {
+        font-size: 36px;
+    }
+
+    .footer__paragraph {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para a navegação de redes sociais */
+.footer__social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+.footer__social-item {
+    display: inline-block;
+}
+
+.footer__social-link {
+    display: inline-block;
+    color: #333; /* Cor padrão dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 34px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para a cor dos ícones */
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+    color: var(--red-dark); /* Cor dos ícones ao passar o mouse ou focar */
+}
+
+/* Adicionar fontes para os ícones */
+.icon-instagram::before {
+    content: '\f16d'; /* Código unicode do ícone do Instagram */
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.icon-facebook::before {
+    content: '\f09a'; /* Código unicode do ícone do Facebook */
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.icon-linkedin::before {
+    content: '\f08c'; /* Código unicode do ícone do LinkedIn */
+    font-family: 'Font Awesome 5 Brands';
+}

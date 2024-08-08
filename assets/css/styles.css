@@ -1,0 +1,114 @@
+/* Importação dos estilos específicos */
+@import url('../../libs/fontawesome/css/all.min.css');
+@import 'header.css';
+@import 'content.css';
+@import 'footer.css';
+
+/* Definições de Variáveis */
+:root {
+    --font-default: 'Inter', sans-serif;
+    --font-size-large: 48px;
+    --font-size-medium: 20px;
+    --gray-dark: #3A404E;
+    --gray-light: #667085;
+    --red-very-dark: #6E2424;
+    --red-dark: #8E2424;
+    --red-light: rgba(142, 36, 36, 0.05);
+    --white: #FFF;
+    --white-dark: #F9FAFB;
+    --black-light: #101828;
+}
+
+/* Estilo Global */
+body {
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o container principal */
+.main-container {
+    max-width: 80%;
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        max-width: 90%;
+    }
+}
+
+
+/* Estilo dos Botões */
+.btn {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+/* Botão Destacado */
+.btn--highlighted {
+    color: var(--white);
+    background-color: var(--red-dark);
+    padding: 0.8em 1em;
+    border-radius: 10px;
+}
+
+/* Botão Primário */
+.btn--primary {
+    color: var(--black-light);
+    background-color: var(--white);
+    padding: 0.8em 1em;
+    border-radius: 10px;
+    border: 1px solid var(--gray-light);
+}
+
+/* Estilos para visibilidade do texto alternativo */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/* Fonte do FontAwesome Brands */
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    src: url('/libs/fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
+         url('/libs/fontawesome/webfonts/fa-brands-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fonte do FontAwesome Regular */
+@font-face {
+    font-family: 'Font Awesome 5 Regular';
+    src: url('/libs/fontawesome/webfonts/fa-regular-400.woff2') format('woff2'),
+         url('/libs/fontawesome/webfonts/fa-regular-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fonte do FontAwesome Solid */
+@font-face {
+    font-family: 'Font Awesome 5 Solid';
+    src: url('/libs/fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+         url('/libs/fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

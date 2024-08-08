@@ -67,8 +67,8 @@
     transition: color 0.3s; /* Transição suave para a cor dos ícones */
 }
 
-.footer__social-link:hover,
-.footer__social-link:focus {
+.footer__social-link i:hover,
+.footer__social-link i:focus {
     color: var(--red-dark); /* Cor dos ícones ao passar o mouse ou focar */
 }
 
@@ -76,14 +76,17 @@
 .icon-instagram::before {
     content: '\f16d'; /* Código unicode do ícone do Instagram */
     font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
 }
 
 .icon-facebook::before {
     content: '\f09a'; /* Código unicode do ícone do Facebook */
     font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
 }
 
 .icon-linkedin::before {
     content: '\f08c'; /* Código unicode do ícone do LinkedIn */
     font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
 }

@@ -7,7 +7,8 @@
 /* Definições de Variáveis */
 :root {
     --font-default: 'Inter', sans-serif;
-    --font-size-large: 48px;
+    --font-size-extra-large: 48px;
+    --font-size-large: 34px;
     --font-size-medium: 20px;
     --gray-dark: #3A404E;
     --gray-light: #667085;
@@ -17,6 +18,7 @@
     --white: #FFF;
     --white-dark: #F9FAFB;
     --black-light: #101828;
+    --black: #000;
 }
 
 /* Estilo Global */
@@ -86,29 +88,26 @@ body {
     word-wrap: normal;
 }
 
-/* Fonte do FontAwesome Brands */
-@font-face {
-    font-family: 'Font Awesome 5 Brands';
-    src: url('/libs/fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
-         url('/libs/fontawesome/webfonts/fa-brands-400.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.section-head {
+    font-weight: 600;
+    font-size: var(--font-size-large);
+    color: var(--black-light);
+    margin: 2rem 0;
 }
 
-/* Fonte do FontAwesome Regular */
-@font-face {
-    font-family: 'Font Awesome 5 Regular';
-    src: url('/libs/fontawesome/webfonts/fa-regular-400.woff2') format('woff2'),
-         url('/libs/fontawesome/webfonts/fa-regular-400.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.pagination {
+    text-align: center;
+    font-weight: 600;
 }
 
-/* Fonte do FontAwesome Solid */
-@font-face {
-    font-family: 'Font Awesome 5 Solid';
-    src: url('/libs/fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
-         url('/libs/fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.pagination .fas {
+    padding: 7px 10px;
+    background-color: var(--red-very-dark);
+    border-radius: 10%;
+    margin: 0 5px;
+    color: var(--white);
+}
+
+.pagination .fas:hover {
+    background-color: var(--red-dark);
 }

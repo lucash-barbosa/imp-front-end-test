@@ -81,6 +81,10 @@
     color: var(--gray-light);
 }
 
+.header__nav-link:hover {
+    color: var(--black);
+}
+
 /* Botões de cabeçalho */
 .header__buttons {
     display: flex;

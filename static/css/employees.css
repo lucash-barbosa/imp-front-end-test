@@ -1,0 +1,36 @@
+.user-list {
+    margin: 50px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-list li.user-item {
+    width: 300px;
+    text-align: center;
+}
+
+.user-list li.user-item img {
+    aspect-ratio: 4 / 4;
+    width: 150px;
+    height: auto;
+    border-radius: 10%;
+    border: 1px solid #71717157;
+}
+
+.user-list li.user-item .user-details {
+    margin-top: 5px;
+}
+
+.user-list .user-details__name {
+    font-weight: 600;
+}
+
+.user-list .user-details__email {
+    max-width: 100%;
+    word-wrap: break-word;
+    color: var(--gray-light);
+    font-size: 14px;
+}
